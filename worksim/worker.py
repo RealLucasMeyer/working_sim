@@ -10,3 +10,7 @@ class Worker:
     def work(self):
         rng = default_rng()
         return rng.normal(loc=self.competency)
+
+    def rest_and_vest(self):
+        rng = default_rng()
+        return rng.normal(loc=self.competency) / 2
